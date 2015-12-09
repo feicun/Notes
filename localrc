@@ -1,0 +1,70 @@
+# A working localrc for OpenStack Liberty
+# Clone OpenStack from stable branch firstly, current stable release is "Liberty":
+# git clone https://git.openstack.org/openstack-dev/devstack -b stable/liberty
+
+# Misc
+ADMIN_PASSWORD=123456
+DATABASE_PASSWORD=$ADMIN_PASSWORD
+RABBIT_PASSWORD=$ADMIN_PASSWORD
+SERVICE_PASSWORD=$ADMIN_PASSWORD
+SERVICE_TOKEN=$ADMIN_PASSWORD
+
+# Target Path
+DEST=/opt/stack
+
+# Enable Logging
+LOGFILE=$DEST/logs/stack.sh.log
+VERBOSE=True
+LOG_COLOR=True
+SCREEN_LOGDIR=$DEST/logs
+
+# Upgrade packages installed by pip
+PIP_UPGRADE=True
+
+# The default enabled services includes: Glance (API and Registry), Keystone, # Nova (API, Certificate, Object Store, Compute, Network, Scheduler, Certificate Authentication), 
+# Cinder (Scheduler, API, Volume), Horizon, MySQL, RabbitMQ, Tempest.
+
+# Nova
+enable_service n-novnc n-cauth
+
+# Neutron
+disable_service n-net
+ENABLED_SERVICES+=,q-svc,q-agt,q-dhcp,q-l3,q-meta,neutron
+ENABLED_SERVICES+=,q-lbaas,q-vpn,q-fwaas
+
+# Ceilometer
+#enable_service ceilometer-acompute ceilometer-acentral ceilometer-anotification ceilometer-collector ceilometer-api
+#enable_service ceilometer-alarm-notifier ceilometer-alarm-evaluator
+CEILOMETER_BACKEND=mongodb
+enable_plugin ceilometer https://git.openstack.org/openstack/ceilometer
+
+# Enable Heat
+enable_service heat h-api h-api-cfn h-api-cw h-eng
+
+# Trove
+enable_service trove tr-api tr-tmgr tr-cond
+
+# Sahara
+enable_service sahara
+
+# Swift
+enable_service s-proxy s-object s-container s-account
+SWIFT_REPLICAS=1
+SWIFT_HASH=011688b44136573e209e
+
+# Horizon (Dashboard UI) - (always use the trunk)
+#ENABLED_SERVICES+=,horizon
+#HORIZON_REPO=https://github.com/openstack/horizon
+#HORIZON_BRANCH=master
+
+# Cinder - Block Device Service
+#ENABLED_SERVICES+=,cinder,c-api,c-vol,c-sch
+
+# Glance - Image Service
+#ENABLED_SERVICES+=,g-api,g-reg
+
+#FIXED_RANGE=10.0.0.0/24
+#HOST_IP=200.21.1.61
+#FLOATING_RANGE=200.21.50.1/24
+#PUBLIC_NETWORK_GATEWAY=200.21.50.2
+#Q_FLOATING_ALLOCATION_POOL=start=200.21.50.100,end=200.21.50.150

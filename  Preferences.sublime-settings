@@ -1,0 +1,16 @@
+{
+    "color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night-Eighties.tmTheme",
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "theme": "Soda Dark 3.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "word_wrap": true,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "scroll_past_end": true,
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
+    "tab_size": 4,
+}
