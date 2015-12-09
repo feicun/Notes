@@ -1,10 +1,13 @@
-# Use `rejoin-stack.sh` to terminate or restart service:
+# Use `rejoin-stack.sh` to terminate or restart OpenStack services
 
-## `rejoin-stack.sh` will let you join stack screen.
-## Some basic operation of screen:
-1. Navigate: > ctrl + a + " (press shift + ')
-2. List screen: > $ screen -ls
-3. Re attach screen: > $ screen -r (the number you got in above cmd)
+## `rejoin-stack.sh` could let you join stack `screen`.
+### Some basic operation of screen:
+1. Navigate: 
+    ctrl + a + " (press shift + ')
+2. List screen:
+    $ screen -ls
+3. Re attach screen:
+    $ screen -r (the number you got from above cmd)
 
 Terminate or restart service:
 1. $ ./rejoin-stack.sh
