@@ -5,6 +5,7 @@
 4. Test token: `$ openstack token issue`
 
 Then you should get some output like this:
+
 | Field      | Value                            |
 |------------|----------------------------------|
 | expires    | 2015-12-07T21:31:49.019395Z      |
@@ -38,7 +39,7 @@ Use the token id that we got from above cmd to create a token on local machine:
 3.
 Try the following API, which authoried by local token, and will return resources list:
 ```shell
-$ curl -s -H "X-Auth-Token: $TOKEN" http://10.10.1.16:8777/v2/resources | python -m json.tool
+$ curl -s -H "X-Auth-Token: $TOKEN" http://yourhost:8777/v2/resources | python -m json.tool
 ```
 
 OpenStack web API: [Link](http://docs.openstack.org/developer/ceilometer/webapi/v2.html)
