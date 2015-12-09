@@ -1,6 +1,6 @@
 ## How to create token of OpenStack
 1. Check [Keystone openrc document](http://docs.openstack.org/liberty/install-guide-ubuntu/keystone-openrc.html) firstly.
-2. Create `admin-openrc.sh` or `demo-openrc.sh` according to above link
+2. Create `admin-openrc.sh` or `demo-openrc.sh` according to above link.
 3. `source admin-openrc.sh` or `source demo-openrc.sh`
 4. Test token: `$ openstack token issue`
 
@@ -42,6 +42,6 @@ Try the following API, which authoried by local token, and will return resources
 $ curl -s -H "X-Auth-Token: $TOKEN" http://yourhost:8777/v2/resources | python -m json.tool
 ```
 
-OpenStack web API: [Link](http://docs.openstack.org/developer/ceilometer/webapi/v2.html)
+Ceilometer web API: [Link](http://docs.openstack.org/developer/ceilometer/webapi/v2.html)
 
 curl -s -H "X-Auth-Token: $TOKEN" http://10.10.1.16:8777/v2/resources/ostack-compute-s2-16-vdimm_cd_(0x62) | python -m json.tool
