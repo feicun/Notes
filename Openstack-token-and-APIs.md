@@ -5,14 +5,12 @@
 4. Test token: `$ openstack token issue`
 
 Then you should get some output like this:
--------------------------------------------------
 | Field      | Value                            |
--------------------------------------------------
+|------------|----------------------------------|
 | expires    | 2015-12-07T21:31:49.019395Z      |
 | id         | 813c5df5d60d4f50a8cd4aafb41a92d4 |
 | project_id | 93bbd9cafb1b43309782c04ff38f5d5f |
 | user_id    | 5009a4fb8d054328abd5d2b592cd9d4e |
--------------------------------------------------
 
 
 ## Test OpenStack RESTful APIs:
@@ -27,10 +25,10 @@ $ curl -s -X POST http://yourhost:5000/v2.0/tokens \
             | python -m json.tool
 ```
 * Parameters:
-* `-s : Slient mode`
-* `-X : Use giving method(POST/GET etc.)`
-* `-H : header`
-* `-d : data that send through POST method`
+  * `-s : Slient mode`
+  * `-X : Use giving method(POST/GET etc.)`
+  * `-H : header`
+  * `-d : data that send through POST method`
 
 
 2.
