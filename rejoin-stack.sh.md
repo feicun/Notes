@@ -10,8 +10,8 @@
     `$ screen -r (the number you got from above cmd)`
 
 ### Terminate or restart service:
-1. $ ./rejoin-stack.sh
+1. `$ ./rejoin-stack.sh`
 2. Press `ctrl + a + '` switch between different services. You should see different numbers representing each services in the bottom of your terminal window. Input the number when you see "Switch to window:".
 3. Terminate a service: `ctrl + c`
-4. Restart service: press ↑ , then press enter
+4. Restart service: press `↑` , then press enter
 5. exit screen to shell: `ctrl + a + d`
