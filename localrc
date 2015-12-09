@@ -1,6 +1,7 @@
 # A working localrc for OpenStack Liberty
 # Clone OpenStack from stable branch firstly, current stable release is "Liberty":
 # git clone https://git.openstack.org/openstack-dev/devstack -b stable/liberty
+# Then run ./stack.sh under /devstack/ folder
 
 # Misc
 ADMIN_PASSWORD=123456
