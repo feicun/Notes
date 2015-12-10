@@ -1,0 +1,19 @@
+{
+	"auto_complete": false,
+	"color_scheme": "Packages/User/SublimeLinter/Flatland Dark (SL).tmTheme",
+	"font_size": 12,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"scroll_past_end": true,
+	"sublimelinter": false,
+	"tab_size": 4,
+	"theme": "Flatland Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
+}
