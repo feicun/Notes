@@ -1,8 +1,8 @@
-# Use `rejoin-stack.sh` to terminate or restart OpenStack services
+## Use `rejoin-stack.sh` to terminate or restart OpenStack services
 
-## `rejoin-stack.sh` could let you join stack `screen`.
+*`rejoin-stack.sh` could let you join stack `screen`.*
 ### Basic operations of `screen`:
-1. Navigate: 
+1. Navigate:
     `ctrl + a + " (press shift + ')`
 2. List screen:
     `$ screen -ls`
