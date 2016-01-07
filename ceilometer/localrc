@@ -1,5 +1,5 @@
-# A working localrc for OpenStack Liberty
-# Clone OpenStack from stable branch firstly, current stable release is "Liberty":
+# A working localrc for OpenStack Liberty (devstack)
+# Please clone OpenStack from stable branch firstly, current stable release is "Liberty":
 # git clone https://git.openstack.org/openstack-dev/devstack -b stable/liberty
 # Then run ./stack.sh under /devstack/ folder
 
@@ -22,7 +22,7 @@ SCREEN_LOGDIR=$DEST/logs
 # Upgrade packages installed by pip
 PIP_UPGRADE=True
 
-# The default enabled services includes: Glance (API and Registry), Keystone, # Nova (API, Certificate, Object Store, Compute, Network, Scheduler, Certificate Authentication), 
+# The default enabled services includes: Glance (API and Registry), Keystone, # Nova (API, Certificate, Object Store, Compute, Network, Scheduler, Certificate Authentication),
 # Cinder (Scheduler, API, Volume), Horizon, MySQL, RabbitMQ, Tempest.
 
 # Nova
