@@ -15,7 +15,7 @@
   syslocation "Your Location"
   syscontact admin@domain.com
   ```
-  * Above lines only keep the minimal running requirement for SNMP, for full details, please read original conf file.
+  * Note: above lines only keep the minimal running requirement for SNMP, for full details, please read original conf file.
 
 5. Restart SNMPD service
   * `$ service snmpd restart`
