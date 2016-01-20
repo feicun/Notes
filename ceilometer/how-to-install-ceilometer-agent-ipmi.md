@@ -1,3 +1,5 @@
+## How to enable ceilometer-agent-ipmi
+
 ### Steps to install ceilometer-agent-ipmi:
 
 `$ sudo apt-get install ceilometer-agent-ipmi`
@@ -38,6 +40,7 @@
 Ceilometer IPMI agent may not work correctly during to permission issue, if you find error in log, you may follow the below steps:
 
 [Document](https://wiki.openstack.org/wiki/Rootwrap)
+
 1. Enter the directory:
     * `cd /etc/sudoers.d/`
 
