@@ -48,6 +48,9 @@ Ceilometer web API: [Link](http://docs.openstack.org/developer/ceilometer/webapi
 
 
 ## Test OpenStack RESTful APIs with Python:
+
+[Ceilometer web API doc](http://docs.openstack.org/developer/ceilometer/webapi/v2.html)
+
 1.
 Use above commands to request a token.
 
