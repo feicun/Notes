@@ -15,9 +15,9 @@ Then you should get some output like this:
 | user_id    | 5009a4fb8d054328abd5d2b592cd9d4e |
 
 
-## Test OpenStack RESTful APIs with Curl:
+## Test Ceilometer RESTful APIs with Curl:
 
-[Document](http://developer.openstack.org/api-guide/quick-start/api-quick-start.html)
+[OpenStack APIs Document](http://developer.openstack.org/api-guide/quick-start/api-quick-start.html)
 
 1. Use post method to fetch tokens:
 ```
@@ -47,7 +47,7 @@ $ curl -s -H "X-Auth-Token: $TOKEN" http://yourhost:8777/v2/resources | python -
 Ceilometer web API: [Link](http://docs.openstack.org/developer/ceilometer/webapi/v2.html)
 
 
-## Test OpenStack RESTful APIs with Python:
+## Test Ceilometer RESTful APIs with Python:
 
 [Ceilometer web API doc](http://docs.openstack.org/developer/ceilometer/webapi/v2.html)
 
