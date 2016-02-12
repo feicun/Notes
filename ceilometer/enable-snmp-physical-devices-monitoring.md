@@ -1,5 +1,7 @@
 ##  How to enable SNMP physical devices monitoring of ceilometer
-### Enable SNMP monitoring on Ubuntu:
+### Enable SNMP deamon on Ubuntu:
+You should install SNMP service on all nodes that you would like to monitor.
+
 1. Install SNMPD
   * `$ sudo apt-get install snmpd`
 
@@ -28,12 +30,13 @@
   - name: meter_snmp
     interval: 600
     resources:
-        - snmp://localhost
+        - snmp://localhost  # List IP of nodes that you willing to monitor here
     meters:
         - "hardware.cpu*"
         - "hardware.memory*"
         - "hardware.disk*"
         - "hardware.network*"
+        - "hardware.system_stats*"
     sinks:
         - meter_sink
 ...
